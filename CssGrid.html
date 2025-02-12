@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Grid</title>
+    <style>
+        body {
+            background-color: cyan;
+            margin: 0;
+            padding: 0;
+            display: grid;
+
+        }
+
+        /* BANNER */
+        .banner {
+            width: 100%;
+            height: 155px;
+            background-color: black;
+            margin-top: 20px;
+        }
+
+        img{
+            height : 125px;
+            width : 300px;
+            margin-top: 15px;
+            margin-left: 600px;
+        }
+        /* BOXES */
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(4, auto);
+            padding-top: 20px;
+            margin: 0px 10px 0px 10px;
+        }
+
+        .items {
+            border: 2px solid black;
+            background-color: violet;
+            padding: 10px;
+            text-align: center;
+
+        }
+
+        a{
+            text-decoration: none;
+            color : darkcyan;
+        }
+
+        /* BOTTOM PART */
+        .bottom {
+            width: 100%;
+            height: 460px;
+            border : 2px solid black;
+            margin-top: 20px;
+        }
+
+        /* COLOR CHANGE USING :target */
+        #red:target ~ .bottom {
+            background-color: red;
+        }
+
+        #blue:target ~ .bottom {
+            background-color: blue;
+        }
+
+        #green:target ~ .bottom {
+            background-color: green;
+        }
+
+        #green:target ~ .bottom {
+            background-color: none;
+        }
+
+        .color-target {
+            display: none;
+        }
+
+    </style>
+</head>
+<body>
+
+    <div class="banner">
+        <img src = 'image.png'>
+    </div>
+
+    <a id="red" class="color-target"></a>
+    <a id="blue" class="color-target"></a>
+    <a id="green" class="color-target"></a>
+    <a id="none" class="color-target"></a>
+
+    <div class="grid">
+        <div class="items"><a href="#red">Red</a></div>
+        <div class="items"><a href="#blue">Blue</a></div>
+        <div class="items"><a href="#green">Green</a></div>
+        <div class="items"><a href="#none">None</a></div>
+    </div>
+
+    <div class="bottom"></div>
+
+</body>
+</html>
