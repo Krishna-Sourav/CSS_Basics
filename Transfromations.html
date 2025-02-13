@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transformations</title>
+    <style>
+
+        /*General Settings*/
+        body{
+            background-color: black;
+        }
+
+        p , h1 {
+            text-align: center;
+            padding: 40px;
+        }
+        
+
+        /* Rotation*/
+        .RotateBox{
+            height : 200px;
+            width : 200px;
+            background-color: white;
+            margin-left: 622px;
+            margin-top: 50px;
+            margin-bottom: 40px;
+
+        }
+
+        .RotateBox:hover {
+            transform: rotate(100deg);
+        }
+
+
+        /*Scaling*/
+
+        .ScaleBox{
+            height : 200px;
+            width : 200px;
+            background-color: white;
+            margin-left: 622px;
+            margin-top: 50px;
+            margin-bottom: 40px;
+        }
+        .ScaleBox:hover {
+            transform: scale(0.5 , 0.5);
+        }
+
+        /*Skew*/
+
+        .SkewBox{
+            height : 200px;
+            width : 200px;
+            background-color: white;
+            margin-left: 622px;
+            margin-top: 50px;
+            margin-bottom: 40px;
+        }
+
+        .SkewBox:hover {
+            transform: skewX(150deg);
+        }
+
+        /*Translation*/
+
+        .TranslateBox{
+            height : 200px;
+            width : 200px;
+            background-color: white;
+            margin-left: 622px;
+            margin-top: 50px;
+            margin-bottom: 40px;
+        }
+
+        .TranslateBox:hover {
+            transform: translateY(75px);
+        }
+
+        
+    </style>
+</head>
+<body>
+
+    <h1 style = 'color : white'>Different Types Of Transformations</h1>
+    <hr style = "color : white">
+    <div class="RotateBox">
+        <p style = 'color : black;'> HOVER OVER ME FOR A ROTATION</p>
+    </div>
+    <hr style = "color : white">
+    <div class="ScaleBox">
+        <p style = 'color : black;'> HOVER OVER ME FOR A SCALING EFFECT</p>
+    </div>
+    <hr style = "color : white">
+    <div class="SkewBox">
+        <p style = 'color : black;'> HOVER OVER ME FOR A SKEW EFFECT</p>
+    </div>
+    <hr style = "color : white">
+    <div class="TranslateBox">
+        <p style = 'color : black;'> HOVER OVER ME FOR A TRANSLATION</p>
+    </div>
+</body>
+</html>
