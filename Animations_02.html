@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animations_02</title>
+    <style>
+        body{
+            background-color: black;
+            padding : 0px;
+            margin : 0px;
+        }
+
+        h4{
+            text-align: center;
+            padding-top: 86px;
+            padding-left: 18px;
+        }
+        .box1{
+            background-color: white;
+            width : 200px;
+            height : 200px;
+            border-radius: 100%;
+            animation : linear_ani 10s infinite alternate;
+
+        }
+        .box2{
+            background-color: white;
+            width : 200px;
+            height : 200px;
+            border-radius: 100%;
+            animation : ease_ani 10s infinite alternate;
+            
+        }
+        .box3{
+            background-color: white;
+            width : 200px;
+            height : 200px;
+            border-radius: 100%;
+            animation : ease_in_ani 10s infinite alternate;
+            
+        }
+        .box4{
+            background-color: white;
+            width : 200px;
+            height : 200px;
+            border-radius: 100%;
+            animation : ease_out_ani 10s infinite alternate;
+        }
+        .box5{
+            background-color: white;
+            width : 200px;
+            height : 200px;
+            border-radius: 100%;
+            animation : ease_in_out_ani 10s infinite alternate;
+            
+        }
+
+        @keyframes linear_ani {
+            from{left : 0px;}
+            to{left : 200px}
+        }
+
+        @keyframes ease_ani {
+            from{left : 0px;}
+            to{left : 200px}
+        }
+
+        @keyframes ease_in_ani {
+            from{left : 0px;}
+            to{left : 200px}
+        }
+
+        @keyframes ease_out_ani {
+            from{left : 0px;}
+            to{left : 200px}
+        }
+
+        @keyframes ease_in_out_ani {
+            from{left : 0px;}
+            to{left : 200px}
+        }
+
+
+    </style>
+</head>
+<body>
+    <div class="box1"><h4>I am Linear Animation</h4></div>
+    <hr style = "color: grey 2px solid;">
+    <div class="box2"><h4>I am Ease Animation</h4></div>
+    <hr style = "color: grey 2px solid;">
+    <div class="box3"><h4>I am Ease-in Animation</h4></div>
+    <hr style = "color: grey 2px solid;">
+    <div class="box4"><h4>I am Ease-Out Animation</h4></div>
+    <hr style = "color: grey 2px solid;">
+    <div class="box5"><h4>I undergo an Ease-in-Out Animation</h4></div>
+</body>
+</html>
